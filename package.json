@@ -2,7 +2,15 @@
   "name": "@hassnhamada.github.io/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "nx run-many --target=build --all --parallel",
+    "test": "nx run-many --target=test --all --parallel",
+    "lint": "nx run-many --target=lint --all --parallel",
+    "typecheck": "nx run-many --target=typecheck --all --parallel",
+    "format": "biome format --write",
+    "mini-ci": "biome format --write --changed && nx affected --target=typecheck && nx affected --target=eslint:lint",
+    "portfolio:deploy": "nx run portfolio:build && gh-pages -d apps/portfolio/dist"
+  },
   "private": true,
   "dependencies": {
     "react": "19.0.0",
