@@ -9,11 +9,13 @@
     "typecheck": "nx run-many --target=typecheck --all --parallel",
     "format": "biome format --write",
     "mini-ci": "biome format --write --changed && nx affected --target=typecheck && nx affected --target=lint",
+    "full-ci": "npm run format && npm run typecheck && npm run lint",
     "portfolio:deploy": "nx run portfolio:build && gh-pages -d apps/portfolio/dist"
   },
   "private": true,
   "dependencies": {
     "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.0.1",
     "@mui/material": "^7.0.1",
     "react": "19.0.0",
     "react-dom": "19.0.0",

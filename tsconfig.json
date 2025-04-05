@@ -8,6 +8,9 @@
     },
     {
       "path": "./libs/theme"
+    },
+    {
+      "path": "./libs/error-handling"
     }
   ]
 }

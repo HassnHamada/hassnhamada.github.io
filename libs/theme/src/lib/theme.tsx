@@ -325,6 +325,20 @@ export const theme = createTheme({
     },
   },
   components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          margin: 0,
+          padding: 0,
+          boxSizing: 'border-box',
+        },
+        html: {
+          margin: 0,
+          padding: 0,
+          boxSizing: 'border-box',
+        },
+      },
+    },
     MuiAppBar: {
       defaultProps: {
         enableColorOnDark: true,
