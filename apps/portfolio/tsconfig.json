@@ -3,6 +3,12 @@
   "include": [],
   "references": [
     {
+      "path": "../../libs/theme"
+    },
+    {
+      "path": "../../libs/error-handling"
+    },
+    {
       "path": "./tsconfig.app.json"
     }
   ],
