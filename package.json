@@ -51,7 +51,5 @@
     "vite": "^6.0.0",
     "vitest": "^3.0.0"
   },
-  "workspaces": [
-    "apps/*"
-  ]
+  "workspaces": ["apps/*"]
 }
