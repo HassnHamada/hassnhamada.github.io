@@ -14,7 +14,8 @@
       "**/build",
       "./.yarn",
       "./.nx/cache",
-      "./.nx/workspace-data"
+      "./.nx/workspace-data",
+      "./vscode"
     ]
   },
   "formatter": {
