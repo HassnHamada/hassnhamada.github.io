@@ -1,5 +1,6 @@
 import { Box, Grid } from '@mui/material'
 import Header from './Sections/Header'
+import Work from './Sections/Work'
 
 export function App() {
   return (
@@ -12,6 +13,9 @@ export function App() {
       >
         <Grid size={{ xs: 6 }}>
           <Header />
+        </Grid>
+        <Grid size={{ xs: 6 }}>
+          <Work />
         </Grid>
       </Grid>
     </Box>
