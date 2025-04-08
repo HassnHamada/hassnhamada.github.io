@@ -5,20 +5,23 @@ import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Header() {
-  const links = useMemo(() => [
-    {
-      icon: <LinkedInIcon />,
-      link: 'https://www.linkedin.com/in/hassn-hamada-659025188',
-      text: 'LinkedIn',
-      color: 'rgb(29, 122, 214)'
-    },
-    {
-      icon: <GitHubIcon />,
-      link: "https://github.com/hassnhamada",
-      text: 'GitHub',
-      color: 'rgb(218, 218, 218)'
-    }
-  ], [])
+  const links = useMemo(
+    () => [
+      {
+        icon: <LinkedInIcon />,
+        link: 'https://www.linkedin.com/in/hassn-hamada-659025188',
+        text: 'LinkedIn',
+        color: 'rgb(29, 122, 214)',
+      },
+      {
+        icon: <GitHubIcon />,
+        link: 'https://github.com/hassnhamada',
+        text: 'GitHub',
+        color: 'rgb(218, 218, 218)',
+      },
+    ],
+    []
+  )
   return (
     <Box>
       <Grid container>
@@ -50,7 +53,7 @@ export default function Header() {
         <Grid size={{ xs: 12 }}>
           <Card>
             <CardActions>
-              {links.map((link, index) =>
+              {links.map((link, index) => (
                 <Button
                   key={index}
                   component={Link}
@@ -63,7 +66,7 @@ export default function Header() {
                     {link.text}
                   </Typography>
                 </Button>
-              )}
+              ))}
             </CardActions>
           </Card>
         </Grid>
