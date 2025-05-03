@@ -15,7 +15,7 @@ export function App() {
         <Grid size={{ xs: 6 }}>
           <Header />
         </Grid>
-        <Grid size={{ xs: 6 }}>
+        <Grid size={{ xs: 6 }} my={2}>
           <Work />
         </Grid>
         <Grid size={{ xs: 6 }}>

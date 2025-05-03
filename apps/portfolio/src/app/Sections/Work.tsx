@@ -1,4 +1,4 @@
-import { Box, Grid } from '@mui/material'
+import { Box, Card, Grid, Typography } from '@mui/material'
 import { useMemo } from 'react'
 import WorkCard, { WorkCardProps } from '../Components/WorkCard'
 
@@ -80,13 +80,18 @@ export default function Work() {
 
   return (
     <Box>
-      <Grid container mt={2} spacing={2}>
-        {works.map((work, index) => (
-          <Grid size={{ xs: 12 }} key={index}>
-            <WorkCard {...work} />
-          </Grid>
-        ))}
-      </Grid>
+      <Card sx={{ borderRadius: 1, p: 1, backgroundColor: 'rgba(255, 255, 255, 0.16)' }}>
+        <Typography variant="h4" p={1}>
+          Work Experience <span role="img" aria-label="tools">🛠️</span>
+        </Typography>
+        <Grid container spacing={2}>
+          {works.map((work, index) => (
+            <Grid size={{ xs: 12 }} key={index}>
+              <WorkCard {...work} />
+            </Grid>
+          ))}
+        </Grid>
+      </Card>
     </Box>
   )
 }
