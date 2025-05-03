@@ -1,8 +1,8 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createHashRouter } from 'react-router-dom'
 import App from './app/app'
 import { NotFoundPage } from '@hassnhamada.github.io/error-handling'
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: '/',
     element: <App />,
@@ -11,4 +11,4 @@ export const router = createBrowserRouter([
     path: '*',
     element: <NotFoundPage />,
   },
-])
+], { basename: '/' })
