@@ -80,9 +80,18 @@ export default function Work() {
 
   return (
     <Box>
-      <Card sx={{ borderRadius: 1, p: 1, backgroundColor: 'rgba(255, 255, 255, 0.16)' }}>
+      <Card
+        sx={{
+          borderRadius: 1,
+          p: 1,
+          backgroundColor: 'rgba(255, 255, 255, 0.16)',
+        }}
+      >
         <Typography variant="h4" p={1}>
-          Work Experience <span role="img" aria-label="tools">🛠️</span>
+          Work Experience{' '}
+          <span role="img" aria-label="tools">
+            🛠️
+          </span>
         </Typography>
         <Grid container spacing={2}>
           {works.map((work, index) => (

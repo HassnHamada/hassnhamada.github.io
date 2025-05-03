@@ -43,9 +43,18 @@ export default function Education() {
 
   return (
     <Box>
-      <Card sx={{ borderRadius: 1, p: 1, backgroundColor: 'rgba(255, 255, 255, 0.16)' }}>
+      <Card
+        sx={{
+          borderRadius: 1,
+          p: 1,
+          backgroundColor: 'rgba(255, 255, 255, 0.16)',
+        }}
+      >
         <Typography variant="h4" p={1}>
-          Education <span role="img" aria-label="books">📚</span>
+          Education{' '}
+          <span role="img" aria-label="books">
+            📚
+          </span>
         </Typography>
         <Grid container spacing={1}>
           {education.map((edu, index) => (
